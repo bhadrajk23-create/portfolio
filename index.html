@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHADRA JAYAKRISHNAN | PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff3c3c;
+            --bg: #000000; /* Pure black */
+            --card-bg: #0a0a0a;
+            --text-dim: #888;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* HEADER */
+        header {
+            padding: 40px 20px 10px;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        /* MINIMAL MARQUEE */
+        .marquee {
+            width: 100%;
+            padding: 15px 0;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px 0;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: scroll 25s linear infinite;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            color: #444;
+            letter-spacing: 4px;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.8rem, 6vw, 3.5rem);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .hero p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* CENTERED SECTIONS */
+        section {
+            padding: 50px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 35px;
+            border: 1px solid #111;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+        }
+
+        .project-item {
+            margin-bottom: 30px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-item h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .project-item p {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 35px;
+            border: 1px solid var(--primary);
+            color: white;
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            box-shadow: 0 0 20px rgba(255, 60, 60, 0.3);
+        }
+
+        /* CONTACT */
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.8rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        footer {
+            padding: 60px 20px;
+            font-size: 0.7rem;
+            color: #333;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">BHADRA JAYAKRISHNAN</div>
+</header>
+
+<div class="marquee">
+    <div class="marquee-content">
+        HTML5 • CSS3 • JAVASCRIPT • PYTHON • UI DESIGN • VJCET STUDENT • HTML5 • CSS3 • JAVASCRIPT • PYTHON • UI DESIGN • VJCET STUDENT •
+    </div>
+</div>
+
+<section class="hero">
+    <h1 id="typing"></h1>
+    <p>COMPUTER SCIENCE & DESIGN @ VJCET</p>
+    <a href="#" class="btn">DOWNLOAD RESUME</a>
+</section>
+
+<section id="about">
+    <h2>ABOUT</h2>
+    <div class="card">
+        <p style="font-weight: 300; line-height: 1.8; font-size: 0.95rem;">
+            A passionate Computer Science and Design student at VJCET. I specialize in crafting minimal, functional, and logic-driven web experiences.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="card">
+        <div class="project-item">
+            <h3>NOTE N FLOW</h3>
+            <p>Clean productivity dashboard for focused work.</p>
+        </div>
+        <div class="project-item">
+            <h3>PUZZLE SIMULATOR</h3>
+            <p>Interactive engine built with JavaScript logic.</p>
+        </div>
+        <div class="project-item">
+            <h3>V2 PORTFOLIO</h3>
+            <p>Minimalist black-themed developer identity.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>GET IN TOUCH</h2>
+    <p>BHADRAJK23@GMAIL.COM</p>
+    <div class="contact-links">
+        <a href="https://github.com/bhadrajk23-create">GITHUB</a>
+        <a href="#">LINKEDIN</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 BHADRA JAYAKRISHNAN
+</footer>
+
+<script>
+    const text = "HI, I'M BHADRA JAYAKRISHNAN";
+    let i = 0;
+    function typing(){
+        if(i < text.length){
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 90);
+        }
+    }
+    window.onload = typing;
+</script>
+
+</body>
+</html>
